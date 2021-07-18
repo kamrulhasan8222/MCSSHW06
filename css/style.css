@@ -1,0 +1,202 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* Clock Css */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #8c8882;
+    height: 100vh;
+}
+
+.clock {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-button {
+    height: 3rem;
+    width: 5rem;
+    background: linear-gradient(90deg, rgb(219, 172, 251) 0%, rgb(132, 63, 63) 50%, rgb(193, 141, 68) 100%);
+    border-radius: 0.8rem;
+}
+
+.bottom-button {
+    height: 2rem;
+    width: 2rem;
+    background-color: #483b2d;
+    margin-left: 1.5rem;
+}
+
+.right-button,
+.left-button,
+.center-button,
+.bottom-stand,
+.leg-stand-right,
+.leg-stand-left {
+    position: absolute;
+    z-index: -1;
+}
+
+.right-button {
+    left: 230px;
+    transform: rotate(40deg);
+}
+
+.left-button {
+    left: 20px;
+    transform: rotate(-40deg);
+}
+
+.center-button {
+    left: 12.5rem;
+    top: -34px;
+}
+
+.bottom-stand {
+    height: 7rem;
+    width: 27rem;
+    left: 50%;
+    bottom: -75px;
+    transform: translateX(-50%);
+    border-radius: 60px 60px 16px 16px;
+    background: linear-gradient(90deg, rgb(47, 40, 26) 0%, rgb(172, 135, 46) 67%);
+    box-shadow: 1px 1px 13px 6px #282424;
+}
+
+.leg-body {
+    height: 10rem;
+    width: 3rem;
+    background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(45, 3, 11) 74%, rgb(240, 240, 240) 100%);
+    box-shadow: 1px 1px 14px 3px black;
+}
+
+.leg-stand-right {
+    right: 60px;
+    bottom: -40px;
+    transform: rotate(-30deg);
+    z-index: -5;
+}
+
+.leg-stand-left {
+    left: 60px;
+    bottom: -40px;
+    transform: rotate(30deg);
+    z-index: -5;
+}
+
+.clock-body {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.clock-bg,
+.center {
+    height: 27rem;
+    width: 27rem;
+    background-color: #d2caca;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock-bg {
+    background: url('../image/bg.png') no-repeat center/cover;
+}
+
+.center {
+    height: 4rem;
+    width: 4rem;
+    background: linear-gradient(#513c3c, #67678e, #99b599);
+    border: 1px solid bisque;
+}
+
+@keyframes rotation {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.second,
+.minute,
+.hour {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    bottom: 50%;
+    border-radius: 40%;
+    border: 1px solid red;
+}
+
+.second {
+    height: 13rem;
+    width: 1rem;
+    background: linear-gradient(#020253, #007cff);
+    animation-duration: 60s;
+    animation-timing-function: steps(60);
+    z-index: -1;
+}
+
+.minute {
+    height: 12rem;
+    width: 1.5rem;
+    background: linear-gradient(#604a4a, #802a00);
+    animation-duration: 3600s;
+    animation-timing-function: steps(60);
+    z-index: -2;
+}
+
+.hour {
+    height: 10rem;
+    width: 2.5rem;
+    background: linear-gradient(#ffd805, #026802);
+    animation-duration: 43200s;
+    animation-timing-function: steps(60);
+    z-index: -3;
+}
+
+.clock-name,
+.clock-add {
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    left: 50%;
+    text-shadow: 1px 1px 5px #0a0080, 2px 2px 7px #8e1146;
+    transform: translateX(-50%);
+}
+
+.clock-name {
+    font-size: 4rem;
+    color: red;
+    bottom: 7rem;
+    z-index: -10;
+}
+
+.clock-add {
+    font-size: 2rem;
+    bottom: 2.5rem;
+}
