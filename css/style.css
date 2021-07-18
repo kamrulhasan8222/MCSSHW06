@@ -1,0 +1,320 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* site default css */
+
+*,
+*:before,
+*:after {
+    margin: 0%;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.col-75 {
+    width: 75%;
+    float: left;
+}
+
+.col-50 {
+    width: 50%;
+    float: left;
+}
+
+.col-25 {
+    width: 25%;
+    float: left;
+}
+
+
+/* 01 Home section Css */
+
+
+/* home left */
+
+.home-left {
+    background: url('../images/First-section-left.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 50rem;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.home-left::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 40%, rgb(0, 0, 0));
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.home-left-image {
+    width: 18rem;
+    margin: 0 auto;
+    display: block;
+    padding-top: 5rem;
+}
+
+.home-left-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.home-left-text {
+    font-size: 1.1rem;
+    padding: 1rem 10rem;
+    line-height: 1.8rem;
+}
+
+
+/* home-right css */
+
+.home-right-top {
+    background: linear-gradient(129deg, rgba(250, 250, 250, 1) 16%, rgba(219, 223, 224, 1) 47%, rgba(158, 172, 172, 1) 76%);
+    height: 25rem;
+    position: relative;
+    padding: 0 4rem;
+}
+
+.home-right-top-image {
+    width: 20rem;
+    float: right;
+}
+
+.home-righ-top-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 3rem;
+}
+
+.home-right-top-span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    color: rgb(0, 210, 131);
+}
+
+.home-right-top-text {
+    font-size: 1.1rem;
+    width: 60%;
+    display: inline-block;
+    line-height: 1.8rem;
+    color: #464646;
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+.home-right-bottom {
+    background: linear-gradient(129deg, rgba(59, 78, 76, 1) 16%, rgba(39, 51, 51, 1) 47%, rgba(16, 20, 21, 1) 76%);
+    height: 25rem;
+    color: #fff;
+    padding-right: 4rem;
+    display: inline-block;
+}
+
+.home-right-bottom-image {
+    width: 18.5rem;
+    float: left;
+    margin-right: 4rem;
+}
+
+.home-righ-bottom-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 3rem;
+}
+
+.home-right-bottom-text {
+    font-size: 1.1rem;
+    width: 60%;
+    display: inline-block;
+    line-height: 1.8rem;
+    color: #aeaeae;
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+
+/* 01 Home section ends */
+
+
+/* 02 Info Section css */
+
+
+/* info-left */
+
+.info-left-top {
+    height: 25rem;
+}
+
+.info-left-top-left {
+    background: linear-gradient(270deg, rgba(206, 239, 248, 1) 5%, rgba(109, 125, 136, 1) 32%, rgba(95, 112, 122, 1) 80%, rgba(43, 51, 62, 1) 100%);
+    height: 25rem;
+}
+
+.info-left-top-left-image {
+    float: left;
+    margin-right: 3rem;
+    width: 20rem;
+}
+
+.info-left-top-left-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 3rem 0 0 2.5rem;
+}
+
+.info-left-top-left-span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    color: #fff;
+    padding-left: 2.5rem;
+}
+
+.info-left-top-left-text {
+    font-size: 1.1rem;
+    display: inline-block;
+    line-height: 1.8rem;
+    color: #171515;
+    padding: 1rem 0;
+    text-align: justify;
+    width: 60%;
+}
+
+.info-left-top-right {
+    background: radial-gradient(circle, rgba(1, 135, 192, 1) 29%, rgba(1, 86, 156, 1) 57%, rgba(2, 72, 144, 1) 100%);
+    height: 25rem;
+}
+
+.info-left-top-right-image {
+    width: 23rem;
+    height: 23rem;
+}
+
+.info-left-top-right-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 3rem;
+    text-align: center;
+    position: relative;
+    bottom: 10rem;
+    color: #fff;
+}
+
+.info-left-bottom-left {
+    height: 25rem;
+    background: radial-gradient(circle, rgba(242, 242, 242, 1) 29%, rgba(240, 242, 245, 1) 57%, rgba(235, 235, 235, 1) 100%);
+}
+
+.info-left-bottom-left-image {
+    width: 100%;
+    padding-top: 6rem;
+}
+
+.info-left-bottom-right {
+    background-color: #452928;
+    height: 25rem;
+}
+
+.info-left-bottom-right-image {
+    float: left;
+    width: 20rem;
+    margin: 0 2rem;
+}
+
+.info-left-bottom-right-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 3rem 0 0 2.5rem;
+    color: #fff;
+}
+
+.info-left-bottom-right-span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    color: #fd6767;
+    padding-left: 2.5rem;
+}
+
+.info-left-bottom-right-text {
+    font-size: 1.1rem;
+    display: inline-block;
+    line-height: 1.8rem;
+    color: #b3a8a8;
+    padding: 1rem 0;
+    text-align: justify;
+    width: 60%;
+}
+
+
+/* info right */
+
+.info-right {
+    background: linear-gradient(180deg, rgba(230, 241, 224, 1) 4%, rgba(138, 146, 135, 1) 27%, rgba(40, 42, 39, 1) 80%);
+    height: 50rem;
+}
+
+.info-right-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 3rem 0 0 2.5rem;
+}
+
+.info-right-span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    color: rgb(104, 34, 7);
+    padding-left: 2.5rem;
+}
+
+.info-right-text {
+    font-size: 1.1rem;
+    display: inline-block;
+    line-height: 1.5rem;
+    color: #464646;
+    padding: 1rem 2.5rem;
+    text-align: justify;
+}
+
+.info-right-image {
+    padding-top: 2rem;
+    height: 27rem;
+    width: 27rem;
+}
+
+
+/* 02 Info Section css ends */
